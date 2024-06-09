@@ -8,7 +8,11 @@ const PORT = process.env.SERVER_PORT || 8080
 
 //CORS settings
 const opts = {
-  origin: ["http://localhost:3000", "http://localhost:8080"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "https://peaceful-malasada-28e7c2.netlify.app/",
+  ],
 }
 app.use(cors(opts))
 app.options("*", cors(opts))
