@@ -11,8 +11,9 @@ const opts = {
   origin: [
     "http://localhost:3000",
     "http://localhost:8080",
-    "https://peaceful-malasada-28e7c2.netlify.app/",
+    "https://peaceful-malasada-28e7c2.netlify.app",
     "https://subtle-torte-efe9ae.netlify.app",
+    "https://extraordinary-cobbler-72dfda.netlify.app",
   ],
 }
 app.use(cors(opts))
