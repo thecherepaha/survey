@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react"
 export const ApplicationContext = createContext()
 
 export function ApplicationProvider(props) {
-  axios.defaults.baseURL = "http://localhost:8080"
+  axios.defaults.baseURL = "https://survey-rzyd.onrender.com"
 
   // 1st question
   const [passport, setPassport] = useState({
