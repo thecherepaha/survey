@@ -1,0 +1,5 @@
+export { Passport } from "./passport"
+export { Education } from "./education"
+export { Experience } from "./experience"
+export { Languages } from "./languages"
+export { Skills } from "./skills"
