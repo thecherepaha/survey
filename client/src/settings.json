@@ -1,6 +1,6 @@
 {
   "development": {
-    "server_url": "http://localhost:8080"
+    "server_url": "https://survey-rzyd.onrender.com"
   },
   "production": {
     "server_url": "https://survey-rzyd.onrender.com"
