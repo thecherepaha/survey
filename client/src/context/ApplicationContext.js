@@ -1,10 +1,11 @@
 import axios from "axios"
 import React, { createContext, useState } from "react"
+const Settings = require("../settings.json")
 
 export const ApplicationContext = createContext()
 
 export function ApplicationProvider(props) {
-  axios.defaults.baseURL = "https://survey-rzyd.onrender.com"
+  axios.defaults.baseURL = Settings[process.env.NODE_ENV].server_url
 
   // 1st question
   const [passport, setPassport] = useState({
