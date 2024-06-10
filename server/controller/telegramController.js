@@ -19,7 +19,7 @@ const formatExperience = (experience) => {
       (exp, index) => `
 *${index + 1}:*
 - *поступление:* ${exp.in ?? "---"}
-- *ухода:* ${exp.out ?? "---"}
+- *уход:* ${exp.out ?? "---"}
 - *Позиция:* ${exp.position ?? "---"}
 - *Адрес:* ${exp.address ?? "---"}
 `
@@ -33,8 +33,8 @@ const formatLanguages = (languages) => {
 
 const formatSkills = (skills) => {
   return `
-- *PC:* ${skills.pc ?? "---"}
-- *Hard:* ${skills.hard ?? "---"}
+- *Навыки ПК:* ${skills.pc ?? "---"}
+- *Проф навыки:* ${skills.hard ?? "---"}
 `
 }
 
@@ -57,8 +57,8 @@ const formatMessage = (data) => {
   return `
 ${formatPassport(data.passport)}
 ${formatEducation(data.educations)}
-*Languages:* ${formatLanguages(data.languages)}
-*Skills:* ${formatSkills(data.skills)}
+*Языки:* ${formatLanguages(data.languages)}
+*Навыки:* ${formatSkills(data.skills)}
 ${formatExperience(data.experience)}
   `
 }
